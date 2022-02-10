@@ -1,0 +1,190 @@
+<html>
+    <head>
+        <title>博客的欢迎界面！</title>
+
+        <script type="text/javascript">
+
+
+            function recordIn(){
+                name=prompt("你好！你叫什么名字呀？");
+                name=","+ name;
+                if(name==',')
+                    alert("神秘的用户，"+timeSort()+"好！");
+                else
+                    alert(timeSort()+"好呀"+name);
+            }
+            
+            function getTime(){
+                var now=new Date();
+                var day=now.getDay();
+                var hour=now.getHours();
+                var min=now.getMinutes();
+                if(min<10)
+                    min="0"+min;
+            }
+
+            function timeSort(){
+                var now1=new Date();
+                var noww=0;
+                noww=now1.getHours();
+                if(noww>=5 && noww<=11){
+                    return '早上';
+                }
+                else if(noww>=11 && noww<13){
+                    return '中午';
+                }
+                else if(noww>=13 && noww<17){
+                    return '下午';
+                }
+                else if(noww>=17){
+                    return '晚上';
+                }
+                else{
+                    return '凌晨';
+                }
+            }
+
+            function captcha(){
+                
+            }
+
+        </script>
+
+
+        <style>
+            .fal{
+                width:20px;
+                height:230px;
+            }
+
+            .foot{
+                background-color:yellowgreen;
+                bottom: 0px;
+                font-size: larger;
+                height:30px;
+                left:0;
+                padding:25px;
+                position:fixed;
+                text-align: center;
+                vertical-align:center;
+                width:100%;
+            }
+
+            .GALAXY{
+
+                font-size:40px;
+                right:1px;     
+                top:1px; 
+                height:0;
+                width:6px;
+            }
+           
+            .title{
+                background-color: rgb(242, 245, 250);
+                border:2px solid rgb(123, 162, 248);
+                border-radius:20px;
+                height:21px;
+                float:left;
+                font-family:monospace;
+                font-size:xx-large;
+                font-weight:bold;
+                text-align:center;
+                padding:45px;
+                width: 80%;
+            }
+
+            .rRabbit{
+                background-color:rgb(231, 235, 243);
+                float:right;
+                margin-top:30px;
+                margin-right:0px;
+                position:float;
+                             
+            }
+            img{
+                width:100%;
+            }
+
+         
+
+            .record{
+                background-color:rgb(231, 235, 243);
+                border-radius:10px;
+                cursor:pointer;
+                float:right;
+                font-size:large;
+                margin-top:30px;
+                margin-right:45px;
+                padding:14px;
+                position:float;
+                text-align:center;
+                width:3%;                
+            }
+
+
+
+
+
+            table{
+                float:left;
+                background-color:white;
+                font-size:larger;
+                height:400px;
+                width:65%;
+               
+            }
+         
+            th, td {
+                border-bottom: 1px solid #ddd;
+                height:60px;
+                text-align: center;
+                vertical-align: bottom;
+            }
+            .introduce{  
+                margin-left: 200px;
+                text-align: center; 
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <div class="title" >GALAXY博客欢迎界面</div>
+        <div class="record" onclick="recordIn();">打个招呼</div>
+        <div class="fal"></div>
+        <div class="foot">Hi,可以关注我的博客https://galaxy-r.github.io/哦</div>
+        <div class="rRabbit"><img src="兔子爱心.png" alt="爱心兔"><div class="GALAXY">GALAXY!</div>
+    </div>
+
+        <div class="introduce">
+            <table>
+                <tr>
+                    <th>信息</th>
+                    <th>描述</th>
+                </tr>
+                <tr>
+                    <td>建站时间</td>
+                    <td>2021-7-20</td>
+                </tr>
+                <tr>
+                    <td>建站人</td>
+                    <td>你可以叫我GALAXY</td>
+                </tr>
+                <tr>
+                    <td>建站目的</td>
+                    <td>给博客站点做介绍</td>
+                </tr>
+                <tr>
+                    <td>想说的话</td>
+                    <td>愿曾经的我们在硝烟散尽的世界重逢</td>
+                </tr>
+                <tr>
+                    <td>题外话</td>
+                    <td>RABBIT！！！</td>
+                </tr>
+            </table>
+        </div>
+        
+        
+    </body>
+</html>
